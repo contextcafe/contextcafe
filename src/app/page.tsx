@@ -1,44 +1,61 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
-<main className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-semibold mb-4">
-        Constitutional Law, Explained with Context
-      </h1>
-
-      <p className="text-lg text-gray-700 mb-8">
-        ContextCafe is a knowledge platform for law students, judiciary aspirants,
-        and researchers to understand constitutional law beyond memorisation.
-      </p>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-medium mb-2">What ContextCafe Is</h2>
-        <p className="text-gray-700">
-          ContextCafe helps learners understand why constitutional provisions exist,
-          how courts interpret them, and where they are applied.
+    <main className="max-w-5xl mx-auto px-4 py-14">
+      {/* Hero Section */}
+      <section className="mb-14">
+        <h1 className="text-4xl font-semibold mb-4">
+          Constitutional Law, Explained with Context
+        </h1>
+        <p className="text-lg text-gray-700 max-w-3xl">
+          ContextCafe is a constitutional law knowledge platform designed for law
+          students, judiciary aspirants, and researchers who want to understand
+          constitutional principles beyond memorisation.
         </p>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-medium mb-2">Who It Is For</h2>
-        <ul className="list-disc pl-6 text-gray-700">
+      {/* What ContextCafe Is */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-medium mb-3">What ContextCafe Is</h2>
+        <p className="text-gray-700 max-w-4xl">
+          ContextCafe focuses on explaining constitutional provisions, doctrines,
+          and judgments by placing them in their proper legal and judicial
+          context. The aim is to help learners understand why a provision exists,
+          how courts interpret it, and how it is applied in practice.
+        </p>
+      </section>
+
+      {/* Who It Is For */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-medium mb-3">Who It Is For</h2>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>LL.B. and integrated law students</li>
           <li>Judiciary aspirants</li>
-          <li>Law teachers and researchers</li>
-          <li>Advocates seeking drafting clarity tools</li>
+          <li>Law teachers and academic researchers</li>
+          <li>Advocates seeking clarity in drafting and legal language</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-medium mb-2">How ContextCafe Helps</h2>
-        <ul className="list-disc pl-6 text-gray-700">
-          <li>Article-wise constitutional explanations</li>
-          <li>Landmark judgment summaries</li>
-          <li>Exam-oriented answer structures</li>
-          <li>Language and drafting support tools</li>
+      {/* How It Helps */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-medium mb-3">How ContextCafe Helps</h2>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Article-wise explanations of constitutional provisions</li>
+          <li>Structured summaries of landmark judgments</li>
+          <li>Conceptual clarity for exam and research writing</li>
+          <li>Language and drafting support tools for legal writing</li>
         </ul>
       </section>
-    </main>   
+
+      {/* Philosophy */}
+      <section className="border-t pt-8">
+        <h2 className="text-2xl font-medium mb-3">Our Philosophy</h2>
+        <p className="text-gray-700 max-w-4xl">
+          Law is not meant to be memorised in isolation. Constitutional law, in
+          particular, must be understood in the context of its history, judicial
+          interpretation, and evolving social realities. ContextCafe follows a
+          context-first approach to legal learning.
+        </p>
+      </section>
+    </main>
   );
 }
