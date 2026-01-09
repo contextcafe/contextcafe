@@ -3,10 +3,22 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "ContextCafe – Constitutional Law Explained with Context",
+  title: {
+    default: "ContextCafe – Constitutional Law Explained with Context",
+    template: "%s | ContextCafe",
+  },
   description:
-    "ContextCafe is a constitutional law knowledge platform for law students, judiciary aspirants, and researchers.",
+    "ContextCafe is an educational platform for understanding constitutional law, judicial interpretation, and legal drafting with clarity and context.",
+  metadataBase: new URL("https://contextcafe.com"),
+  alternates: {
+    canonical: "https://contextcafe.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({
   children,
